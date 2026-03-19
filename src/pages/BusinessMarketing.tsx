@@ -39,7 +39,7 @@ export default function BusinessMarketing() {
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -15, scale: 1.02, boxShadow: "0 20px 40px rgba(0,210,255,0.1)" }}
+              whileHover={{ y: -15, scale: 1.02, boxShadow: "0 20px 40px rgba(245,158,11,0.1)" }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="p-10 glossy-card rounded-[2.5rem] flex flex-col justify-between group hover:border-brand-primary/40 transition-all duration-700 relative overflow-hidden"
             >
@@ -58,7 +58,7 @@ export default function BusinessMarketing() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{ y: -15, scale: 1.02, boxShadow: "0 20px 40px rgba(0,210,255,0.1)" }}
+              whileHover={{ y: -15, scale: 1.02, boxShadow: "0 20px 40px rgba(245,158,11,0.1)" }}
               className="p-10 glossy-card rounded-[2.5rem] flex flex-col justify-between group hover:border-brand-primary/40 transition-all duration-700 relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />

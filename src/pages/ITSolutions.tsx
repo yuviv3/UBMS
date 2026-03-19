@@ -32,7 +32,7 @@ export default function ITSolutions() {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              whileHover={{ y: -15, scale: 1.02, boxShadow: "0 20px 40px rgba(0,210,255,0.1)" }}
+              whileHover={{ y: -15, scale: 1.02, boxShadow: "0 20px 40px rgba(245,158,11,0.1)" }}
               className="p-8 glossy-card rounded-[2.5rem] hover:border-brand-primary/40 transition-all duration-700 group relative overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />

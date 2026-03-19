@@ -4,7 +4,7 @@ import { MessageSquare, X, Send, Bot, User, Loader2, Sparkles } from 'lucide-rea
 import { GoogleGenAI } from "@google/genai";
 import { cn } from '../lib/utils';
 
-const SYSTEM_INSTRUCTION = `You are the official AI Consultant for Unicorn BMS (Brand Management Services). 
+const SYSTEM_INSTRUCTION = `You are the official AI Consultant for UNICORN BMS (Brand Management Services). 
 Your goal is to assist users with inquiries about our three core verticals:
 1. Health & Wealth Management: Dynace Global products, Real Estate (TN/RERA licensed), Insurance (IRDAI, Axis Max Life, Niva Bupa), Mutual Funds, SIPs, and risk management.
 2. IT Solutions: SAAS reselling, GST compliance, Digital/Content services, and computer infrastructure.
@@ -21,7 +21,7 @@ interface Message {
 export const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', text: "Hello! I'm your Unicorn BMS Consultant. How can I assist you with our Health, Wealth, IT, or Marketing services today?" }
+    { role: 'model', text: "Hello! I'm your UNICORN BMS Consultant. How can I assist you with our Health, Wealth, IT, or Marketing services today?" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);

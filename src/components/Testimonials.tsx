@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Vikram Sethi",
     role: "CEO, TechVision India",
-    content: "Unicorn BMS transformed our digital infrastructure. Their IT solutions are world-class and their strategic advisory is unparalleled.",
+    content: "UNICORN BMS transformed our digital infrastructure. Their IT solutions are world-class and their strategic advisory is unparalleled.",
     rating: 5,
     image: "https://picsum.photos/seed/user1/100/100"
   },

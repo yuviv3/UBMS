@@ -22,10 +22,11 @@ import {
   Layers,
   Newspaper,
   Linkedin,
-  Twitter,
+  Facebook,
   Instagram
 } from 'lucide-react';
 import { Chatbot } from './components/Chatbot';
+import { Logo } from './components/Logo';
 import { cn } from './lib/utils';
 
 // Import Pages
@@ -73,10 +74,8 @@ const Navbar = () => {
         "flex items-center justify-between px-6 py-3 rounded-full transition-all duration-500 border border-white/10 shadow-2xl backdrop-blur-xl",
         isScrolled ? "bg-brand-dark/80 py-2" : "bg-white/5"
       )}>
-        <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,210,255,0.4)] group-hover:scale-110 transition-transform">
-            <Zap className="text-white fill-white" size={20} />
-          </div>
+        <Link to="/" className="flex items-center gap-3 group">
+          <Logo className="w-10 h-10 group-hover:scale-110 transition-transform" />
           <span className="text-xl font-display font-bold tracking-tighter">UNICORN <span className="text-brand-primary">BMS</span></span>
         </Link>
 
@@ -126,7 +125,7 @@ const Navbar = () => {
           <Link to="/contact" className={cn("text-sm font-medium transition-colors hover:text-brand-primary", location.pathname === '/contact' ? "text-brand-primary" : "text-white/70")}>Contact</Link>
           
           <div className="flex items-center gap-4">
-            <Link to="/contact" className="bg-gradient-to-br from-brand-primary to-brand-secondary text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(0,210,255,0.3)] hover:shadow-[0_0_30px_rgba(0,210,255,0.5)] transition-all active:scale-95">
+            <Link to="/contact" className="bg-gradient-to-br from-brand-primary to-brand-secondary text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transition-all active:scale-95">
               Get Started
             </Link>
           </div>
@@ -172,7 +171,7 @@ const Navbar = () => {
 
             <Link to="/contact" className="text-lg font-medium text-white/80" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
             
-            <Link to="/contact" className="bg-gradient-to-br from-brand-primary to-brand-secondary text-white w-full py-4 rounded-full font-bold mt-4 text-center shadow-[0_0_20px_rgba(0,210,255,0.3)]">
+            <Link to="/contact" className="bg-gradient-to-br from-brand-primary to-brand-secondary text-white w-full py-4 rounded-full font-bold mt-4 text-center shadow-[0_0_20px_rgba(245,158,11,0.3)]">
               Consult Now
             </Link>
           </motion.div>
@@ -187,23 +186,21 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto">
       <div className="grid md:grid-cols-4 gap-12 mb-16">
         <div className="col-span-2">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-10 h-10 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,210,255,0.3)]">
-              <Zap className="text-white fill-white" size={20} />
-            </div>
+          <div className="flex items-center gap-3 mb-6">
+            <Logo className="w-10 h-10" />
             <span className="text-xl font-display font-bold tracking-tighter">UNICORN <span className="text-brand-primary">BMS</span></span>
           </div>
           <p className="text-white/40 max-w-sm leading-relaxed mb-8 text-base">
             A premium, multi-vertical brand management platform covering Health & Wealth, IT, and Business Marketing services.
           </p>
           <div className="flex gap-4">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-brand-primary hover:border-brand-primary/50 hover:bg-brand-primary/5 transition-all">
+            <a href="https://www.linkedin.com/in/unicornbms/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-brand-primary hover:border-brand-primary/50 hover:bg-brand-primary/5 transition-all">
               <Linkedin size={20} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-brand-primary hover:border-brand-primary/50 hover:bg-brand-primary/5 transition-all">
-              <Twitter size={20} />
+            <a href="https://www.facebook.com/unicornbms" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-brand-primary hover:border-brand-primary/50 hover:bg-brand-primary/5 transition-all">
+              <Facebook size={20} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-brand-primary hover:border-brand-primary/50 hover:bg-brand-primary/5 transition-all">
+            <a href="https://www.instagram.com/unicornbms/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 hover:text-brand-primary hover:border-brand-primary/50 hover:bg-brand-primary/5 transition-all">
               <Instagram size={20} />
             </a>
           </div>
@@ -231,7 +228,7 @@ const Footer = () => (
           <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
         </div>
         <p className="text-sm text-white/20">
-          © 2026 Unicorn BMS. All rights reserved.
+          © 2026 UNICORN BMS. All rights reserved.
         </p>
       </div>
     </div>

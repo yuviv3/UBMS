@@ -4,6 +4,7 @@ import { TrendingUp, Cpu, Globe, Zap, ArrowRight, Shield, Home as HomeIcon, Chec
 import { cn } from '../lib/utils';
 import { Link } from 'react-router-dom';
 import { Testimonials } from '../components/Testimonials';
+import { Logo } from '../components/Logo';
 
 const SectionHeading = ({ title, subtitle, badge, centered = false }: { title: string, subtitle?: string, badge?: string, centered?: boolean }) => (
   <div className={cn("mb-12", centered ? "text-center mx-auto max-w-3xl" : "")}>
@@ -31,7 +32,7 @@ const ServiceCard = ({ icon: Icon, title, description, items, color = "blue", in
     whileHover={{ 
       y: -15, 
       scale: 1.02,
-      boxShadow: "0 20px 40px rgba(0,210,255,0.15)"
+      boxShadow: "0 20px 40px rgba(245,158,11,0.15)"
     }}
     transition={{ 
       duration: 0.8, 
@@ -76,7 +77,7 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/5 border border-white/10 rounded-full text-brand-primary text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md"
             >
-              <Zap size={14} className="fill-brand-primary" /> Brand Management Services
+              <Logo className="w-5 h-5" /> Brand Management Services
             </motion.span>
             
             <motion.h1 
@@ -95,7 +96,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg text-white/50 mb-8 max-w-lg leading-relaxed font-light"
             >
-              Unicorn BMS provides a powerful ecosystem of Health, Wealth, IT, and Marketing solutions designed for the modern visionary.
+              UNICORN BMS provides a powerful ecosystem of Health, Wealth, IT, and Marketing solutions designed for the modern visionary.
             </motion.p>
             
             <motion.div 
@@ -263,7 +264,7 @@ export default function Home() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">TRANSFORMATION?</span>
           </h2>
           <p className="text-lg text-white/40 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
-            Join hundreds of visionaries who have secured their future with Unicorn BMS.
+            Join hundreds of visionaries who have secured their future with UNICORN BMS.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="glossy-button px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition-transform">
